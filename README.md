@@ -1,34 +1,141 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SP ecommerce FrontEnd 
+UCAMP Proyecto 5
+Aplicación para una página de comercio electrónico
 
-## Getting Started
+## Intro
+Generar un página que ofrezca el servicio de comercio electrónico **SP ecommerce**
 
-First, run the development server:
+## FrontEnd
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prototipado
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+      Vista Principal
+  <img src="/frontend/public/Home.svg" alt="Página Principal" style="height: 300px; width:500px;"/>
+  
+      Vista de Login/Logout
+  <img src="/frontend/public/Login.svg" alt="Página Login/Logout" style="height: 300px; width:500px;"/>
+  
+      Vista de Formulario de Registro
+  <img src="/frontend/public/Forma.svg" alt="Página Formulario" style="height: 300px; width:500px;"/>
+  
+      Vista de Categorias
+  <img src="/frontend/public/Category.svg" alt="Página Categoria" style="height: 300px; width:500px;"/>
+  
+      Vista detallada del producto
+  <img src="/frontend/public/Detail.svg" alt="Página Detalle del Producto" style="height: 300px; width:500px;"/>
+  
+      Vista de shoppingCart
+  <img src="/frontend/public/ShoppingCart.svg" alt="Página ShoppingCart" style="height: 300px; width:500px;"/>
+  
+### Crear aplicación de FrontEnd
+* Se hará uso del framework next.js que es un marco de desarrollo construido sobre Node.js.
+      
+      `npx create-next-app frontend`
+      
+* Para los estilos se utilizará el framework Bulma con los archivos de extensión sass.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+      `npm i bulma node-sass`
+       
+* Instalar los siguientes componentes/librerias a usar:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+      `npm i axios cors @fortawesome`
+      
+* Usaremos:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+      `next/link
+      { Link }`
+      
+      `next/router
+      { useRouter }`
+     
+      `react
+      { useState
+        useEffect }`
+        
+      `react-icons`
+ 
+ ### Componentes
+ 
+ - Home
+ - Principal
+ - Header
+ - Layout
+ - Footer
+ - Login
+ - Logout
+ - Main
+ - LoginForm
+ - Cart
+ - DetailCart
+ - ShowCart
+ - Info
+ 
+ ### ScreenShots
+ 
+      Página Principal
+ 
+   <img src="/frontend/public/PrincipalPage.png" alt="Página Principal" style="height: 300px; width:500px;"/>
+ 
+      Formulario para Agregar Usuarios
+      
+   <img src="/frontend/public/FormularioPage.png" alt="Agregar Usuario" style="height: 300px; width:500px;"/>
 
-## Learn More
+      Sección de Login/Logout
+      
+   <img src="/frontend/public/LoginPage.png" alt="Login" style="height: 300px; width:500px;"/>
+   <img src="/frontend/public/ValidationLogin.png" alt="Validar Login" style="height: 300px; width:500px;"/>
+   
+      Ruta para mostrar los productos de una categoría
+      
+   <img src="/frontend/public/CategoryPage.png" alt="Categoría" style="height: 300px; width:500px;"/>
+   
+      Ruta para mostrar el detalle del producto
+      
+   <img src="/frontend/public/DetailPage.png" alt="Detalle de Producto" style="height: 300px; width:500px;"/>
 
-To learn more about Next.js, take a look at the following resources:
+      Ruta para mostrar el ShoppingCart del usuario
+      
+   <img src="/frontend/public/ShoppingCartPage.png" alt="Shopping Cart" style="height: 300px; width:500px;"/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ¿Cómo ejecutar la aplicación FrontEnd?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+En el archivo package.json dentro de la sección **"scripts"** se pueden agregar opciones de ejecución:
 
-## Deploy on Vercel
+`"scripts": {
+     "dev": "next dev"
+  }`
+  
+  Teclear el siguiente comando en una terminal
+  
+    npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <img src="/frontend/public/RunFrontEnd.png" alt="Ejecución Aplicación FrontEnd" style="height: 200px; width:700px;"/>
+ 
+>>Esta aplicación se comunica con el server BackEnd del repositorio SPecommerce para poder funcionar de forma correcta.
+>>https://github.com/jantoniosalinas/SPcommerce.git
+
+ ## Obtener proyecto
+ 
+ - [X] Clonar el respositorio
+  - En una terminal ejecutar lo siguiente:
+
+        git clone https://github.com/jantoniosalinas/SPcommerceFrontEnd.git
+        
+ - [X] Instalar los modulos
+  - Ejecutar la siguiente instrucción
+
+        npm install
+
+## Para realizar las pruebas de funcionamiento
+Ingresar en el navegador la url **http://localhost:3000**
+
+#### Comentarios
+    La aplicación FrontEnd de SP ecommerce sigue en mejora continua, siempre buscando aplicar las mejores practicas de lo
+    aprendido en el UCAMP.
+    
+#### UCAMP - UTEL 
+`UCAMP @2021
+`José Antonio Salinas Ochoa`
+`https://www.instagram.com/jasosalinas/`
+ 
